@@ -5,14 +5,14 @@
 }
 
 .main {
-  display: flex;
-  justify-content: center;
+  &__container--grid-position {
+    margin: 50px auto;
+  }
 
   &__container {
-    width: 944px;
-    height: 856px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    max-width: 950px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,200px);
+    gap: 49px 49px;
   }
 }
